@@ -28,7 +28,8 @@ class Player
   attr_reader :score
   
   def initialize
-    @image = Gosu::Image.new("media/starfighter.bmp")
+    #@image = Gosu::Image.new("media/starfighter.bmp")
+    @image = Gosu::Image.from_text("@", 36)
     @beep = Gosu::Sample.new("media/beep.wav")
     @x = @y = @vel_x = @vel_y = @angle = 0.0
     @score = 0
